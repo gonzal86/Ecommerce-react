@@ -31,7 +31,7 @@ export default function NavBar() {
                                 <a className="nav-link" href="#">Niños</a>
                             </li>
                         </ul>
-                        <CartWidget/>
+                        <CartWidget />
                     </div>
 
                 </div>
