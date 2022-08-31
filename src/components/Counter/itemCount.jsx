@@ -12,7 +12,7 @@ const Count = ({ stock }) => {
             setCount(count + 1)
             setStock(counterStock - 1)
         }
-        else{
+        else {
             alert("Sin Stock");
         }
 
