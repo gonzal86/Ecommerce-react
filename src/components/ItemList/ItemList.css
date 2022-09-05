@@ -1,7 +1,5 @@
-.Cards {
+.cards-margin {
     margin-top: 5%;
-    margin-left: 2%;
-    margin-right: 2%;
-    display: flex;
-    justify-content: space-between;
+    margin-right: 4%;
+    margin-left: 4%;
 }
