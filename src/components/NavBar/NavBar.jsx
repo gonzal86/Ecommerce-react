@@ -2,6 +2,9 @@ import React from 'react'
 import "./NavBar.css"
 import "bootswatch/dist/lux/bootstrap.min.css";
 import CartWidget from '../CartWidget/CartWidget';
+import { NavLink } from 'react-router-dom'
+
+
 
 export default function NavBar() {
     return (
@@ -9,26 +12,25 @@ export default function NavBar() {
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container-fluid">
 
-                    <a className="navbar-brand" href="#">TIENDA CALZADO</a>
+                    <NavLink className="nav-link logo" to="/home">TIENDA CALZADO</NavLink>
+
                     <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" />
                     </button>
 
                     <div className="navbar-collapse collapse" id="navbarColor02" style={{}}>
-                        <ul className="navbar-nav me-auto">
+                        <ul className="navbar-nav me-auto links">
                             <li className="nav-item">
-                                <a className="nav-link active" href="#">Home
-                                    <span className="visually-hidden">(current)</span>
-                                </a>
+                                <NavLink to="/home" className="nav-link">Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Hombres</a>
+                                <NavLink to="/categoria/Hombre" className="nav-link">Hombres</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Mujeres</a>
+                                <NavLink to="/categoria/Mujer" className="nav-link">Mujeres</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Niños</a>
+                                <NavLink to="/categoria/Kids" className="nav-link">Kids</NavLink>
                             </li>
                         </ul>
                         <CartWidget />

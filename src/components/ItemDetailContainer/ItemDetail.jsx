@@ -31,9 +31,6 @@ const ItemDetail = ({ item }) => {
                     </div>
                 </div>
             </div>
-
-
-
         </article>
     );
 }
