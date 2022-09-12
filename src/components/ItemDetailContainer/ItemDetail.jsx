@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ItemDetail.css';
 import Count from '../Counter/itemCount';
 import "bootswatch/dist/lux/bootstrap.min.css";
+import { Link } from 'react-router-dom';
 
-const ItemDetail = ({ item }) => {
+export const ItemDetail = ({ item }) => {
 
-    const onAdd = (quantity) => {
-        console.loog(quantity)
+    const [show, setshow] = useState(true)
+
+    const onAdd = () => {
+        setshow(false)
+        console.log({ show })
     }
 
     return (
@@ -22,11 +26,11 @@ const ItemDetail = ({ item }) => {
                             <p className="card-text">{item.descripcion}</p>
                             <p className="card-text">{item.detalle}</p>
                             <h4 className="card-text">$ {item.precio}</h4>
-                            <Count stock={10} />
-                            <div className='margin-button'>
-                                <button type="button" className="btn btn-outline-dark padding">Agregar</button>
-                                <button type="button" className="btn btn-outline-dark padding">Comprar</button>
-                            </div>
+                            {
+                                show ? <Count onAdd={onAdd} /> : <Link to={`/cart/`}>
+                                    <div className='margin-button'><button type="button" className="btn btn-outline-primary"> Ir al carrito </button></div>
+                                </Link>
+                            }
                         </div>
                     </div>
                 </div>

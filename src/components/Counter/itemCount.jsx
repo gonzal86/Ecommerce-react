@@ -3,9 +3,9 @@ import './Counter.css'
 import "bootswatch/dist/lux/bootstrap.min.css";
 import { useState } from 'react';
 
-const Count = ({ stock }) => {
+export const Count = ({ onAdd }) => {
     const [count, setCount] = useState(0)
-    const [counterStock, setStock] = useState(stock)
+    const [counterStock, setStock] = useState(10)
 
     function add() {
         if (counterStock > 0) {
@@ -15,31 +15,33 @@ const Count = ({ stock }) => {
         else {
             alert("Sin Stock");
         }
-
     }
 
     function substract() {
         if (count > 0) {
             setCount(count - 1)
             setStock(counterStock + 1)
-        }
 
+        }
     }
 
     function reset() {
         setCount(0)
-        setStock(stock)
+        setStock(10)
     }
+
 
     return (
         <div>
-            <p>Stock: {counterStock}</p>
-            <p>Cantidad: {count} </p>
-
+            <p>En Stock: {counterStock}</p>
+            <p>Cantidad a comprar: {count} </p>
             <div className='botones'>
-                <button className='btn' onClick={substract}> - </button>
-                <button className='btn' onClick={reset}> Reset </button>
-                <button className='btn' onClick={add}> + </button>
+                <button className='btn btn-outline-dark' onClick={substract}> - </button>
+                <button className='btn btn-outline-dark' onClick={reset}> Cancelar </button>
+                <button className='btn btn-outline-dark' onClick={add}> + </button>
+                <div className='btn-carrito'>
+                    <button className='btn btn-outline-dark' onClick={() => onAdd()}> agregar carrito</button>
+                </div>
             </div>
         </div>
     );

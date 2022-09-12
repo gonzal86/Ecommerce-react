@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import prodData from '../data/produData';
 import ItemDetail from './ItemDetail';
+import "./ItemDetailContainer.css"
 import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = () => {
@@ -20,7 +21,7 @@ const ItemDetailContainer = () => {
     return (
         <>
             {
-                item ? <ItemDetail item={item} /> : <h1>Cargando</h1>
+                item ? <ItemDetail item={item} /> : <div className='loading'><img src="https://cdn-icons-gif.flaticon.com/7403/7403027.gif"  width="100" heigth="100"></img>Cargando...</div>
             }
         </>
     )
