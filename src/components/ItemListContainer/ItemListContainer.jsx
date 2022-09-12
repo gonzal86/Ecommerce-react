@@ -12,9 +12,9 @@ const ItemListContainer = () => {
 
 
     const getProduData = () => new Promise((resolve, reject) => {
-        if(categoria){
+        if (categoria) {
             setTimeout(() => resolve(prodData.filter(produ => produ.categoria === categoria)), 2000)
-        }else{
+        } else {
             setTimeout(() => resolve(prodData), 2000)
         }
 
@@ -25,7 +25,11 @@ const ItemListContainer = () => {
             .then(response => setProductos(response))
     }, [categoria]);
 
-    return <ItemList list={productos} />
+    return (
+        <>
+            <ItemList list={productos} />
+        </>
+    )
 
 };
 
