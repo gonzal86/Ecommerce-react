@@ -3,9 +3,9 @@ import './Counter.css'
 import "bootswatch/dist/lux/bootstrap.min.css";
 import { useState } from 'react';
 
-export const Count = ({ onAdd }) => {
+export const Count = ({stock,onClick}) => {
     const [count, setCount] = useState(0)
-    const [counterStock, setStock] = useState(10)
+    const [counterStock, setStock] = useState(stock)
 
     function add() {
         if (counterStock > 0) {
@@ -27,7 +27,7 @@ export const Count = ({ onAdd }) => {
 
     function reset() {
         setCount(0)
-        setStock(10)
+        setStock(stock)
     }
 
 
@@ -40,7 +40,7 @@ export const Count = ({ onAdd }) => {
                 <button className='btn btn-outline-dark' onClick={reset}> Cancelar </button>
                 <button className='btn btn-outline-dark' onClick={add}> + </button>
                 <div className='btn-carrito'>
-                    <button className='btn btn-outline-dark' onClick={() => onAdd()}> agregar carrito</button>
+                    <button className='btn btn-outline-dark' onClick={()=>onClick(count)}> agregar carrito</button>
                 </div>
             </div>
         </div>

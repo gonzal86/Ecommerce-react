@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Cartcompra = () => {
+const CartView = () => {
     return (
         <div>
             <h1>esta es la cart del sistema</h1>
@@ -8,4 +8,4 @@ const Cartcompra = () => {
     );
 }
 
-export default Cartcompra;
+export default CartView;

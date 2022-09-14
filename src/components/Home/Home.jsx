@@ -8,12 +8,12 @@ const Home = () => {
             <div className='FormaPago'>
                 <div className="container text-center">
                     <div className="row row-cols-4">
-                        <div className="col">Tarjeta de Credito
+                        <div className="col">Credito
                             <div className="align-items-center marg-img">
                                 <img src='https://cdn-icons-png.flaticon.com/512/3037/3037255.png' width='40' height='40' ></img>
                             </div>
                         </div>
-                        <div className="col">Tarjeta de Debito
+                        <div className="col">Debito
                             <div className="align-items-center marg-img">
                                 <img src='https://cdn-icons-png.flaticon.com/512/3592/3592624.png' width='40' height='40' ></img>
                             </div>

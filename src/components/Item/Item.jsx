@@ -15,6 +15,8 @@ function Item({ producto }) {
             <Link to= {`/detalle/${producto.id}`}>
               <button type="button" className="btn btn-outline-primary"> Detalle </button>
             </Link>
+            <img className="img-descuento" src=" https://cdn-icons-gif.flaticon.com/7994/7994396.gif"  alt="..." /> 
+            
           </div>
         </div>
       </div>
