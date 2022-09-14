@@ -1,5 +1,4 @@
 import React, { useContext, useState } from 'react';
-import { ShopWindow } from 'react-bootstrap-icons';
 
 const CartContext = React.createContext([]);
 
@@ -17,47 +16,30 @@ export const CartProvider = ({ children }) => {
 
     /*Agregar elementos al carrito (verifico si el elemento existe: si existe modifico valores, sino lo agrego al array)*/
     const addToCart = (item, quantity) => {
-        /*     if (isInCart(item.id)) {
-                setCart(cart.map(product => {
-                    return product.id === item.id ? { ...product, quantity: product.quantity + quantity } : product
-                }));
-                console.log("actualizo");
-                console.log({ cart });
-            }
-            else {
-                setCart([...cart, { item: item, quantity: quantity }])
-                console.log(isInCart(item.id));
-                console.log("Nuevo");
-                console.log(cart);
-            }
-        } */
-
-        if (cart.length === 0) {
-            setCart([...cart, { item: item, quantity: quantity }])
-        } else {
-            const findICart = cart.find(producto => producto.id === item.id)
-            if (findICart) {
-                findICart.quantity = findICart.quantity + quantity
-                setCart([...cart])
-            } else {
-                setCart([...cart, { item: item, quantity: quantity }])
-            }
+        if(isInCart(item.id)){
+            console.log("existe en el carrito")
+            setCart(cart.map(product=>{
+                return product.id === item.id ? {...product, quantity: product.quantity + quantity , stock: product.stock - quantity} : product
+            })); 
+        }else{
+            console.log("No existe en el carrito")
+            setCart([...cart, {...item, quantity}]) //Si no está el item lo agrego y le sumo el campo quantity
         }
-
-        console.log(cart)
     }
 
-
-    const isInCart = (id) => cart.find(product => product.id === id) ? true : false;
+    console.log(cart)
 
     const removeItem = (id) => setCart(cart.filter(product => product.id !== id));
+
+    const isInCart = (id) => cart.find(product => product.id === id) ? true : false;
 
     return (
         <CartContext.Provider value={{
             clearCart,
-            addToCart,
             isInCart,
-            removeItem
+            addToCart,
+            removeItem,
+            cart
         }}>
             {children}
         </CartContext.Provider>

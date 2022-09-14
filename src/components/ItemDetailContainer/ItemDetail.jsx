@@ -13,9 +13,10 @@ export const ItemDetail = ({ item }) => {
     const [show, setshow] = useState(true)
 
     const onAdd = (count) => {
-        setshow(false)
+        setshow(false);
+        item.stock = item.stock - count;
         addToCart(item, count);
-    }
+    };
 
     return (
         <article className='margin-detail'>
