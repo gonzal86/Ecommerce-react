@@ -1,0 +1,46 @@
+.Subtotal{
+    font-size: 1.3rem;
+    color: black;
+    margin-left: 6%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.Subtotal strong{
+    margin-left: 70%;
+}
+
+.btn-finalizar{
+    margin-left: 45px;
+    width: 90%;
+}
+
+.btn-finalizar:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(174, 255, 0);
+}
+
+.Seguir-Comprando{
+    cursor:pointer;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.Seguir-Comprando p{
+    margin-left: 40%;
+    margin-top: 30px;
+    color: black;
+}
+
+.Carrito-Vacio{
+    font-size: 1.4rem;
+    margin-left: 30%;
+    margin-top: 30px;
+    color: black;
+}
+
+.Carrito-Vacio .link-compra{
+    margin-top: 30px;
+    margin-left: 100px;
+    color: black;
+}

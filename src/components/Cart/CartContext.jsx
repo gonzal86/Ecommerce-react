@@ -9,11 +9,6 @@ export const CartProvider = ({ children }) => {
 
     const [cart, setCart] = useState([]);
 
-    /*Funcion para limpiar el carrito */
-    const clearCart = () => {
-        setCart = [];
-    }
-
     /*Agregar elementos al carrito (verifico si el elemento existe: si existe modifico valores, sino lo agrego al array)*/
     const addToCart = (item, quantity) => {
         if(isInCart(item.id)){
@@ -27,18 +22,23 @@ export const CartProvider = ({ children }) => {
         }
     }
 
-    console.log(cart)
-
-    const removeItem = (id) => setCart(cart.filter(product => product.id !== id));
+    const removeItem = (id) => setCart(cart.filter(product => product.id !== id ));
 
     const isInCart = (id) => cart.find(product => product.id === id) ? true : false;
 
+    const totalProductos = () => cart.reduce((collector, product)=> collector + product.quantity,0);
+
+    const totalprecio = () => {
+        return cart.reduce((prev, act)=>prev + act.quantity * act.precio, 0)
+    }
+
     return (
         <CartContext.Provider value={{
-            clearCart,
             isInCart,
             addToCart,
             removeItem,
+            totalProductos,
+            totalprecio,
             cart
         }}>
             {children}

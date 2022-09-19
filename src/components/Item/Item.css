@@ -12,7 +12,6 @@
     margin-left: 30%;
 }
 
-
 .imagen:hover{
     transform: translateY(5px);
     box-shadow: 6px 3px 30px rgba(124, 124, 124, 0.708);
