@@ -25,7 +25,7 @@ const Home = () => {
                         </div>
                         <div className="col">Transferencia
                             <div className="align-items-center marg-img">
-                                <img src='https://cdn-icons-png.flaticon.com/512/2311/2311685.png' width='40' height='40' ></img>
+                            <img src='https://cdn-icons-png.flaticon.com/512/2311/2311685.png' width='40' height='40' ></img>
                             </div>
                         </div>
                     </div>
