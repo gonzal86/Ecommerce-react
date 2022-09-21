@@ -4,7 +4,7 @@ import Count from '../Counter/itemCount';
 import "bootswatch/dist/lux/bootstrap.min.css";
 import { Link } from 'react-router-dom';
 import { useCartContext } from '../Cart/CartContext';
-
+import Swal from 'sweetalert2';
 
 export const ItemDetail = ({ item }) => {
 
@@ -13,9 +13,18 @@ export const ItemDetail = ({ item }) => {
     const [show, setshow] = useState(true)
 
     const onAdd = (count) => {
-        setshow(false);
-        item.stock = item.stock - count;
-        addToCart(item, count);
+        if (count > 0) {
+            setshow(false);
+            item.stock = item.stock - count;
+            addToCart(item, count);
+        }
+        else {
+            Swal.fire({
+                icon: 'warning',
+                title: 'Cantidad no seleccionada',
+                text: 'Por favor seleccionar cantidad a comprar',
+              })
+        }
     };
 
     return (
@@ -32,7 +41,7 @@ export const ItemDetail = ({ item }) => {
                             <p className="card-text">{item.detalle}</p>
                             <h4 className="card-text">$ {item.precio}</h4>
                             {
-                                show ? <Count stock = {item.stock} onClick={onAdd} /> : <Link to={`/cart/`}>
+                                show ? <Count stock={item.stock} onClick={onAdd} /> : <Link to={`/cart/`}>
                                     <div className='margin-button'><button type="button" className="btn btn-outline-primary"> Ir al carrito </button></div>
                                 </Link>
                             }
