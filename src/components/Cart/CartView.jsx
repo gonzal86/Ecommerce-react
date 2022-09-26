@@ -18,8 +18,8 @@ const CartView = () => {
                     <li className="list-group-item" style={{ maxWidth: '900px' }}>
                         <div className="Carrito-Vacio">
                             <img src='https://cdn-icons-gif.flaticon.com/6451/6451073.gif' width='100' heigth='100' ></img>
-                            <strong> Carrito Vacio </strong>
-                            <Link  to={`/home`}>
+                            <strong> Tu carrito está Vacío </strong>
+                            <Link to={`/home`}>
                                 <p className='link-compra'> ir a comprar <img src='https://cdn-icons-gif.flaticon.com/7740/7740503.gif' width='40' heigth='40' ></img></p>
                             </Link>
                         </div>
@@ -38,7 +38,10 @@ const CartView = () => {
 
                 <li className="list-group-item" style={{ maxWidth: '900px' }}>
                     <p className='Subtotal'>Subtotal:  <strong>${totalprecio()}</strong></p>
-                    <button className="btn btn-outline-primary btn-finalizar"> Finalizar Compra </button>
+                    <Link to={`/Checkout/`}>
+                        <button className="btn btn-outline-primary btn-finalizar"> Realizar Compra </button>
+                    </Link>
+
                     <Link className='Seguir-Comprando' to={`/home`}>
                         <p> o Seguir Comprando <img src='https://cdn-icons-gif.flaticon.com/7740/7740503.gif' width='40' heigth='40' ></img></p>
                     </Link>
