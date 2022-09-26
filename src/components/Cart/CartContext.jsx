@@ -22,6 +22,10 @@ export const CartProvider = ({ children }) => {
         }
     }
 
+    const clear = () => {
+        setCart([]);
+    };
+
     const removeItem = (id) => setCart(cart.filter(product => product.id !== id ));
 
     const isInCart = (id) => cart.find(product => product.id === id) ? true : false;
@@ -35,6 +39,7 @@ export const CartProvider = ({ children }) => {
     return (
         <CartContext.Provider value={{
             isInCart,
+            clear,
             addToCart,
             removeItem,
             totalProductos,
