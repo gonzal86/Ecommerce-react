@@ -30,15 +30,14 @@ export const Count = ({stock,onClick}) => {
         setStock(stock)
     }
 
-
     return (
         <div>
             <p>En Stock: {counterStock}</p>
             <p>Cantidad a comprar: {count} </p>
             <div className='botones'>
-                <button className='btn btn-outline-dark' onClick={substract}> - </button>
+                <button className='btn btn-outline-dark boton-resta' onClick={substract}> - </button>
                 <button className='btn btn-outline-dark' onClick={reset}> Cancelar </button>
-                <button className='btn btn-outline-dark' onClick={add}> + </button>
+                <button className='btn btn-outline-dark boton-suma' onClick={add}> + </button>
                 <div className='btn-carrito'>
                     <button className='btn btn-outline-dark' onClick={()=>onClick(count)}> agregar carrito</button>
                 </div>

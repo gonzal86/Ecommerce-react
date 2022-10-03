@@ -10,17 +10,16 @@ import { Link } from 'react-router-dom';
 const CartView = () => {
     const { cart, totalprecio } = useCartContext();
 
-
     if (cart.length === 0) {
         return (
             <>
                 <ul className="list-group margin-cart">
                     <li className="list-group-item" style={{ maxWidth: '900px' }}>
                         <div className="Carrito-Vacio">
-                            <img src='https://cdn-icons-gif.flaticon.com/6451/6451073.gif' width='100' heigth='100' ></img>
+                            <img src='https://cdn-icons-gif.flaticon.com/6451/6451073.gif' width='100' heigth='100' alt=''></img>
                             <strong> Tu carrito está Vacío </strong>
                             <Link to={`/home`}>
-                                <p className='link-compra'> ir a comprar <img src='https://cdn-icons-gif.flaticon.com/7740/7740503.gif' width='40' heigth='40' ></img></p>
+                                <p className='link-compra'> ir a comprar <img src='https://cdn-icons-gif.flaticon.com/7740/7740503.gif' width='40' heigth='40' alt='' ></img></p>
                             </Link>
                         </div>
                     </li>
@@ -43,7 +42,7 @@ const CartView = () => {
                     </Link>
 
                     <Link className='Seguir-Comprando' to={`/home`}>
-                        <p> o Seguir Comprando <img src='https://cdn-icons-gif.flaticon.com/7740/7740503.gif' width='40' heigth='40' ></img></p>
+                        <p> o Seguir Comprando <img src='https://cdn-icons-gif.flaticon.com/7740/7740503.gif' width='40' heigth='40' alt=''></img></p>
                     </Link>
                 </li>
 

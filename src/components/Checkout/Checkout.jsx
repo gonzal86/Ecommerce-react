@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import "./Checkout.css";
 import { useCartContext } from '../Cart/CartContext';
 import db from '../../services/firebase';
@@ -54,36 +53,35 @@ const Checkout = () => {
         <>
             {!orderId ?
                 <div className='margin-checkout' style={{ maxWidth: '900px' }}>
-
                     <form onSubmit={handleSubmit}>
                         <h3 className='titulo-checkout'><strong>Datos de contacto</strong></h3>
                         <div className="mb-3 col-8">
                             <label className="form-label">Correo Electornico</label>
-                            <input type="email" className="form-control color-text" name="email" value={email} onChange={handleInputChange} />
+                            <input type="email" className="form-control color-text" name="email" required value={email} onChange={handleInputChange} />
                         </div>
                         <h3 className='titulo-checkout dato-contacto'><strong>Datos de Compra</strong></h3>
                         <div className="row">
                             <div className="col">
                                 <label className="form-label">Nombre</label>
-                                <input type="text" className="form-control color-text" name="nombre" value={nombre} onChange={handleInputChange} />
+                                <input type="text" className="form-control color-text" name="nombre" required value={nombre} onChange={handleInputChange} />
                             </div>
                             <div className="col">
                                 <label className="form-label">Apellido</label>
-                                <input type="text" className="form-control color-text" name="apellido" value={apellido} onChange={handleInputChange} />
+                                <input type="text" className="form-control color-text" name="apellido" required value={apellido} onChange={handleInputChange} />
                             </div>
                         </div>
                         <div className="row datos-tarjeta">
                             <div className="col">
                                 <label className="form-label">Numero Tarjeta</label>
-                                <input type="text" className="form-control color-text" name="numeroTarjeta" value={numeroTarjeta} onChange={handleInputChange} />
+                                <input type="number" className="form-control color-text" name="numeroTarjeta" required value={numeroTarjeta} onChange={handleInputChange} />
                             </div>
                             <div className="col">
                                 <label className="form-label">Nombre en Tarjeta</label>
-                                <input type="text" className="form-control color-text" name="nombreTarjeta" value={nombreTarjeta} onChange={handleInputChange} />
+                                <input type="text" className="form-control color-text" name="nombreTarjeta" required value={nombreTarjeta} onChange={handleInputChange} />
                             </div>
                             <div className="col">
                                 <label className="form-label">CVV</label>
-                                <input type="text" className="form-control color-text" name="CVV" value={CVV} onChange={handleInputChange} />
+                                <input type="number" className="form-control color-text" name="CVV" required value={CVV} onChange={handleInputChange} />
                             </div>
                         </div>
                         <input type="submit" value="Finalizar Compra" className="btn btn-outline-primary btn-finalizar" />

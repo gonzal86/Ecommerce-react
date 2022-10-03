@@ -18,3 +18,11 @@
     margin-top: 20px;
     text-align: center;
 }
+
+.boton-resta{
+    margin-right: 6px;
+}
+
+.boton-suma{
+    margin-left: 6px;
+}

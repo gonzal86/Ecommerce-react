@@ -5,20 +5,10 @@ import { useParams } from 'react-router-dom';
 import db from '../../services/firebase'
 import { collection, getDocs, query, where } from 'firebase/firestore';
 
-
 const ItemListContainer = () => {
 
     const [productos, setProductos] = useState([]);
     const { categoria } = useParams();
-
-    //    const getProduData = () => new Promise((resolve, reject) => {
-    //        if (categoria) {
-    //             setTimeout(() => resolve(prodData.filter(produ => produ.categoria === categoria)), 2000)
-    //         } else {
-    //             setTimeout(() => resolve(prodData), 2000)
-    //         }
-
-    //     })
 
     const getData = async (categoria) => {
         try {
@@ -36,10 +26,9 @@ const ItemListContainer = () => {
         getData(categoria)
     }, [categoria])
 
-
     return (
         <>
-            <ItemList list={productos} />
+            <ItemList data={productos} />
         </>
     )
 
