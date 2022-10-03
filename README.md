@@ -8,6 +8,7 @@ Tecnologias utilizadas:
  - desarrollado en react (create-react-app)
  - Firebase para la base de datos donde se guardan los productos y se generan las ordenes de compra
  - boostrap para el layout
+ - CSS
  - Sweet Alert
 
 
