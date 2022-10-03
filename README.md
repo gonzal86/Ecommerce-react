@@ -10,8 +10,7 @@ Tecnologias utilizadas:
  - boostrap para el layout
  - Sweet Alert
 
- image.png
-
+![image](https://user-images.githubusercontent.com/56416260/193612084-5d136cd6-60c6-4f2f-8cf3-3a951a3943f8.png)
 
 
 
