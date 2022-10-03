@@ -24,13 +24,16 @@
     margin-top: 30px;
 }
 
-.col-md-8 .pointer{
-    cursor:pointer;
-    text-decoration-line: none;
+
+.col-md-8 .pointer button:hover{
+    color: rgb(255, 0, 0);
+}
+
+.pointer button{
+    background-color: transparent;
+    border: none;
     color: blue;
     margin-left: 90%;
 }
 
-.col-md-8 .pointer:hover{
-    color: rgb(255, 0, 0);
-}
+
