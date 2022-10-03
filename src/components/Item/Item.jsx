@@ -2,7 +2,6 @@ import "bootswatch/dist/lux/bootstrap.min.css";
 import "./Item.css"
 import { Link } from 'react-router-dom';
 
-
 function Item({ producto }) {
   return (
     <>
@@ -20,7 +19,6 @@ function Item({ producto }) {
           </div>
         </div>
       </div>
-
     </>
   );
 }

@@ -10,15 +10,6 @@ const ItemDetailContainer = () => {
     const [item, setItem] = useState()
     const { id } = useParams()
 
-    //    const getProduct = () => new Promise((resolve, reject) => {
-    //        setTimeout(() => resolve(prodData.find(produ => produ.id === Number(id))), 2000)
-    //    })
-    //
-    //    useEffect(() => {
-    //        getProduct()
-    //            .then(response => setItem(response))
-    //    }, [])
-
     const getSelected = async (id) => {
         try {
             const document = doc(db, "items", id)
@@ -34,13 +25,10 @@ const ItemDetailContainer = () => {
         getSelected(id)
     }, [id])
 
-
-
-
     return (
         <>
             {
-                item ? <ItemDetail item={item} /> : <div className='loading'><img src="https://cdn-icons-gif.flaticon.com/7403/7403027.gif" width="100" heigth="100"></img>Cargando...</div>
+                item ? <ItemDetail item={item} /> : <div className='loading'><img src="https://cdn-icons-gif.flaticon.com/7403/7403027.gif" width="100" heigth="100" alt=''></img>Cargando...</div>
             }
         </>
     )

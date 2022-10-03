@@ -4,14 +4,11 @@ import "bootswatch/dist/lux/bootstrap.min.css";
 import CartWidget from '../CartWidget/CartWidget';
 import { NavLink } from 'react-router-dom'
 
-
-
 export default function NavBar() {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container-fluid">
-
                     <NavLink className="nav-link logo" to="/home">TIENDA CALZADO</NavLink>
 
                     <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
