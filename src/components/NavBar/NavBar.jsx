@@ -9,7 +9,7 @@ export default function NavBar() {
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container-fluid">
-                    <NavLink className="nav-link logo" to="/home">TIENDA CALZADO</NavLink>
+                    <NavLink className="nav-link logo" to="/Home">TIENDA CALZADO</NavLink>
 
                     <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" />
@@ -18,7 +18,7 @@ export default function NavBar() {
                     <div className="navbar-collapse collapse" id="navbarColor02" style={{}}>
                         <ul className="navbar-nav me-auto links">
                             <li className="nav-item">
-                                <NavLink to="/home" className="nav-link">Home</NavLink>
+                                <NavLink to="/Home" className="nav-link">Home</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink to="/categoria/Hombre" className="nav-link">Hombres</NavLink>
