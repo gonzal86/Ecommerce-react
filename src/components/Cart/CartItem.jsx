@@ -18,7 +18,7 @@ const CartItem = ({ product }) => {
                                 <h6 className="card-title titulo-item-Cart">{product.titulo}</h6>
                                 <p className="card-text Price">${product.precio}</p>
                                 <p className="card-text Quantity">Cantidad: {product.quantity}</p>
-                                <strong className='pointer'><a onClick={() => removeItem(product.id)}> Quitar </a></strong>
+                                <strong className='pointer'><button onClick={() => removeItem(product.id)}> Quitar </button></strong>
                             </div>
                         </div>
                     </div>
