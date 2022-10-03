@@ -93,7 +93,7 @@ const Checkout = () => {
                     text: `Su codigo de orden de compra es: ${orderId}`,
                     showConfirmButton: false,
                     allowOutsideClick: false,
-                    footer: `<a class="btn btn-primary" href="/home">Cerrar</a>`
+                    footer: `<a class="btn btn-primary" href="/Home">Cerrar</a>`
                 })}</div>
             }
         </>

@@ -18,7 +18,7 @@ const CartView = () => {
                         <div className="Carrito-Vacio">
                             <img src='https://cdn-icons-gif.flaticon.com/6451/6451073.gif' width='100' heigth='100' alt=''></img>
                             <strong> Tu carrito está Vacío </strong>
-                            <Link to={`/home`}>
+                            <Link to={`/Home`}>
                                 <p className='link-compra'> ir a comprar <img src='https://cdn-icons-gif.flaticon.com/7740/7740503.gif' width='40' heigth='40' alt='' ></img></p>
                             </Link>
                         </div>
