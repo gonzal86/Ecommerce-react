@@ -32,5 +32,3 @@ DEVOLUCION DE LA ORDEN DE COMPRA FINALIZANDO LA OPERACION:
 ![image](https://user-images.githubusercontent.com/56416260/193613070-410529ef-feea-4ece-873f-1d3eb6293c95.png)
 
 
-
-
