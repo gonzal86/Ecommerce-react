@@ -11,9 +11,6 @@ Tecnologias utilizadas:
  - CSS
  - Sweet Alert
 
-<<<<<<< HEAD
-=======
-
 HOME:
 
 ![image](https://user-images.githubusercontent.com/56416260/193612084-5d136cd6-60c6-4f2f-8cf3-3a951a3943f8.png)
@@ -34,10 +31,6 @@ DEVOLUCION DE LA ORDEN DE COMPRA FINALIZANDO LA OPERACION:
 
 ![image](https://user-images.githubusercontent.com/56416260/193613070-410529ef-feea-4ece-873f-1d3eb6293c95.png)
 
-
-
-
->>>>>>> b0cfd9112feaa7992df66e7c0c89b8ca774cbead
 
 
 
