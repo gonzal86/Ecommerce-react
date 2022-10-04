@@ -6,7 +6,7 @@ import './CartItem.css';
 import './CartView.css';
 import { Link } from 'react-router-dom';
 
-
+/*Muestra si el carrito esta vacio, sino muestra el listado de elementos a comprar*/
 const CartView = () => {
     const { cart, totalprecio } = useCartContext();
 

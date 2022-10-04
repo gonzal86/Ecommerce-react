@@ -4,9 +4,8 @@ const CartContext = React.createContext([]);
 
 export const useCartContext = () => useContext(CartContext)
 
+/*Logica del carrito de compras*/
 export const CartProvider = ({ children }) => {
-    /*Logica del carrito de compras*/
-
     const [cart, setCart] = useState([]);
 
     /*Agregar elementos al carrito (verifico si el elemento existe: si existe modifico valores, sino lo agrego al array)*/

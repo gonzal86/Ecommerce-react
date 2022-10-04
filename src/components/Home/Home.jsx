@@ -2,6 +2,7 @@ import React from 'react';
 import ItemListContainer from '../ItemListContainer/ItemListContainer';
 import './Home.css'
 
+/*HOME de la aplicacion */
 const Home = () => {
     return (
         <div>

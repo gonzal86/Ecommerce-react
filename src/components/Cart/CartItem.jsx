@@ -4,7 +4,7 @@ import { useCartContext } from '../Cart/CartContext';
 
 const CartItem = ({ product }) => {
 
-
+/*vista del item en el carrito de compras*/ 
     const { removeItem } = useCartContext();
     return (
         <>

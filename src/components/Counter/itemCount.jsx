@@ -3,6 +3,7 @@ import './Counter.css'
 import "bootswatch/dist/lux/bootstrap.min.css";
 import { useState } from 'react';
 
+/*Logica para el contador de elementos en el detalle del producto */
 export const Count = ({stock,onClick}) => {
     const [count, setCount] = useState(0)
     const [counterStock, setStock] = useState(stock)

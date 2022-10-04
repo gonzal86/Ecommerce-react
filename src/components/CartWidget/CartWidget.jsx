@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import "./CartWidget.css"
 import { useCartContext } from '../Cart/CartContext';
 
-
+/*Muestra el icono del carrito de compras y cantidas de elementos seleccionada*/
 export default function CartWidget() {
     const { cart, totalProductos } = useCartContext();
 
