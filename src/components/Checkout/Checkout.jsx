@@ -5,6 +5,7 @@ import db from '../../services/firebase';
 import { collection, addDoc } from 'firebase/firestore';
 import Swal from 'sweetalert2';
 
+/*Vista del formulario del checkout para finalizar la compra*/
 const Checkout = () => {
     const { cart, totalprecio, clear } = useCartContext()
     const [orderId, setOrderId] = useState()

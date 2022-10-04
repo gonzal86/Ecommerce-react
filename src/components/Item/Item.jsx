@@ -2,6 +2,7 @@ import "bootswatch/dist/lux/bootstrap.min.css";
 import "./Item.css"
 import { Link } from 'react-router-dom';
 
+/*Estructura de la card para cada elemento */
 function Item({ producto }) {
   return (
     <>

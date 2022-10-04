@@ -10,8 +10,6 @@ Tecnologias utilizadas:
  - boostrap para el layout
  - Sweet Alert
 
- image.png
-
 
 
 

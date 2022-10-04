@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import "bootswatch/dist/lux/bootstrap.min.css";
 import './Footer.css'
 
-
+/*Footer de la aplicacion */
 const Footer = () => {
     return (
         <div>
