@@ -11,9 +11,6 @@ Tecnologias utilizadas:
  - CSS
  - Sweet Alert
 
-<<<<<<< HEAD
-=======
-
 HOME:
 
 ![image](https://user-images.githubusercontent.com/56416260/193612084-5d136cd6-60c6-4f2f-8cf3-3a951a3943f8.png)
@@ -35,9 +32,26 @@ DEVOLUCION DE LA ORDEN DE COMPRA FINALIZANDO LA OPERACION:
 ![image](https://user-images.githubusercontent.com/56416260/193613070-410529ef-feea-4ece-873f-1d3eb6293c95.png)
 
 
+HOME:
 
+![image](https://user-images.githubusercontent.com/56416260/193612084-5d136cd6-60c6-4f2f-8cf3-3a951a3943f8.png)
 
->>>>>>> b0cfd9112feaa7992df66e7c0c89b8ca774cbead
+DETALLE DEL PRODUCTO:
+
+![image](https://user-images.githubusercontent.com/56416260/193612462-4adc1747-6bd4-445c-a1e2-bd9b166aae9c.png)
+
+VISTA DEL CARRITO DE COMPRAS:
+
+![image](https://user-images.githubusercontent.com/56416260/193612699-875c740e-e823-4aec-b47b-0f7280ce0d2e.png)
+
+FORMULARIO DE CHECKOUT:
+
+![image](https://user-images.githubusercontent.com/56416260/193612916-2e91e44a-365b-4610-815b-f8408d6387bc.png)
+
+DEVOLUCION DE LA ORDEN DE COMPRA FINALIZANDO LA OPERACION:
+
+![image](https://user-images.githubusercontent.com/56416260/193613070-410529ef-feea-4ece-873f-1d3eb6293c95.png)
+
 
 
 
